@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: lab(61.45% 0.98 -45.14);
+  padding: 20px;
+  border-radius: 10px;
+}
+form input, form select {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.dark-mode input,
+.dark-mode select,
+.dark-mode button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+}
+
+
+form button {
+  background: lab(43.6% -5.88 -35.75);
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+form button:hover {
+  background: hwb(345 60% 33%);
+}
+li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task.done {
+  text-decoration: line-through;
+  color: gray;
+}
+.priority-high { color: hwb(323 0% 0%); }
+.priority-medium { color: hwb(244 4% 36%); }
+.priority-low { color: #80000d; }
